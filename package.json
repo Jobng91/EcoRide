@@ -1,0 +1,23 @@
+{
+  "name": "ecoride",
+  "version": "1.0.0",
+  "description": "EcoRide est un projet web visant à promouvoir l'utilisation de moyens de transport écologiques.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jobng91/EcoRide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jobng91/EcoRide/issues"
+  },
+  "homepage": "https://github.com/Jobng91/EcoRide#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
