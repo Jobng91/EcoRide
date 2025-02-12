@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jobng91/EcoRide#readme",
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
   }
 }
