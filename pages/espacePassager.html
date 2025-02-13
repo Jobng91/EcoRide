@@ -1,0 +1,136 @@
+<div class="container py-5">
+  <h1 class="h2 fw-bold mb-4">Espace passager</h1>
+
+  <!-- Onglets de navigation -->
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-cours-tab" data-bs-toggle="tab" data-bs-target="#nav-cours" type="button" role="tab">Covoiturage en cours</button>
+      <button class="nav-link" id="nav-historique-tab" data-bs-toggle="tab" data-bs-target="#nav-historique" type="button" role="tab">Historique covoiturage</button>
+    </div>
+  </nav>
+
+  <!-- Contenu des onglets -->
+  <div class="tab-content" id="nav-tabContent">
+    
+    <!-- Onglet Covoiturage en cours -->
+    <div class="tab-pane fade show active" id="nav-cours" role="tabpanel">
+      <div class="card p-4 mt-4 card-espace mx-auto d-block">
+        <h2 class="h4 fw-semibold mb-3">Covoiturages en cours</h2>
+
+       
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div class="card p-3">
+                <p><strong>Date :</strong> 2023-05-15</p>
+                <p><strong>Départ :</strong> Paris</p>
+                <p><strong>Arrivée :</strong> Lyon</p>
+                <p><strong>Prix :</strong> 25 crédits</p>
+                <p><strong>Participants :</strong> 3</p>
+                <p><strong>Statut :</strong> À venir</p>
+                <button class="btn btn-primary card-covoiturage mx-auto d-block">Démarrer</button>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card p-3">
+                <p><strong>Date :</strong> 2023-05-16</p>
+                <p><strong>Départ :</strong> Marseille</p>
+                <p><strong>Arrivée :</strong> Nice</p>
+                <p><strong>Prix :</strong> 15 crédits</p>
+                <p><strong>Participants :</strong> 2</p>
+                <p><strong>Statut :</strong> À venir</p>
+                <button class="btn btn-primary card-covoiturage mx-auto d-block">Démarrer</button>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card p-3">
+                <p><strong>Date :</strong> 2023-05-17</p>
+                <p><strong>Départ :</strong> Bordeaux</p>
+                <p><strong>Arrivée :</strong> Toulouse</p>
+                <p><strong>Prix :</strong> 20 crédits</p>
+                <p><strong>Participants :</strong> 4</p>
+                <p><strong>Statut :</strong> En cours</p>
+                <button class="btn btn-primary card-covoiturage mx-auto d-block">Arrivée à destination</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Onglet Historique covoiturage -->
+    <div class="tab-pane fade" id="nav-historique" role="tabpanel">
+      <div class="card p-4 mt-4">
+        <h2 class="h4 fw-semibold mb-3">Historique de mes covoiturages</h2>
+
+        <!-- Table (desktop) -->
+        <div class="d-none d-md-block">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>Date</th>
+                <th>Départ</th>
+                <th>Arrivée</th>
+                <th>Prix</th>
+                <th>Participants</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-04-10</td>
+                <td>Paris</td>
+                <td>Marseille</td>
+                <td>30 crédits</td>
+                <td>3</td>
+                <td>Terminé</td>
+              </tr>
+              <tr>
+                <td>2023-04-12</td>
+                <td>Nantes</td>
+                <td>Bordeaux</td>
+                <td>22 crédits</td>
+                <td>4</td>
+                <td>Annulé</td>
+              </tr>
+              <tr>
+                <td>2023-04-15</td>
+                <td>Lille</td>
+                <td>Rouen</td>
+                <td>18 crédits</td>
+                <td>2</td>
+                <td>Terminé</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Version mobile (cartes) -->
+        <div class="d-md-none">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div class="card p-3">
+                <p><strong>Date :</strong> 2023-04-10</p>
+                <p><strong>Départ :</strong> Paris</p>
+                <p><strong>Arrivée :</strong> Marseille</p>
+                <p><strong>Prix :</strong> 30 crédits</p>
+                <p><strong>Participants :</strong> 3</p>
+                <p><strong>Statut :</strong> Terminé</p>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card p-3">
+                <p><strong>Date :</strong> 2023-04-12</p>
+                <p><strong>Départ :</strong> Nantes</p>
+                <p><strong>Arrivée :</strong> Bordeaux</p>
+                <p><strong>Prix :</strong> 22 crédits</p>
+                <p><strong>Participants :</strong> 4</p>
+                <p><strong>Statut :</strong> Annulé</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  

@@ -1,0 +1,173 @@
+<div class="container py-5">
+  <h1 class="h2 fw-bold mb-4">Espace Employé</h1>
+
+  <!-- Onglets de navigation -->
+  <ul class="nav nav-tabs" id="employeeTabs" role="tablist">
+      <li class="nav-item">
+          <button class="nav-link active" id="avis-tab" data-bs-toggle="tab" data-bs-target="#avis" type="button">Avis en attente</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link" id="problemes-tab" data-bs-toggle="tab" data-bs-target="#problemes" type="button">Covoiturages problématiques</button>
+      </li>
+  </ul>
+
+  <!-- Contenu des onglets -->
+  <div class="tab-content" id="employeeTabsContent">
+      
+      <!-- Onglet Avis en attente -->
+      <div class="tab-pane fade show active p-4" id="avis">
+          <div class="card p-4">
+              <h2 class="h4 fw-semibold mb-3">Avis en attente de validation</h2>
+              <table class="table table-bordered">
+                  <thead class="table-light">
+                      <tr>
+                          <th>Covoiturage</th>
+                          <th>Auteur</th>
+                          <th>Chauffeur</th>
+                          <th>Note</th>
+                          <th>Commentaire</th>
+                          <th>Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>C001</td>
+                          <td>Alice</td>
+                          <td>Bob</td>
+                          <td>4/5</td>
+                          <td>Très bon trajet, chauffeur ponctuel et sympathique.</td>
+                          <td>
+                              <button class="btn btn-success">Valider</button>
+                              <button class="btn btn-danger">Refuser</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>C002</td>
+                          <td>Jean</td>
+                          <td>Thomas</td>
+                          <td>2/5</td>
+                          <td>Le chauffeur était en retard et l’intérieur de la voiture était sale.</td>
+                          <td>
+                              <button class="btn btn-success">Valider</button>
+                              <button class="btn btn-danger">Refuser</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>C003</td>
+                          <td>Laura</td>
+                          <td>Emma</td>
+                          <td>5/5</td>
+                          <td>Excellente expérience, je recommande vivement ce chauffeur.</td>
+                          <td>
+                              <button class="btn btn-success">Valider</button>
+                              <button class="btn btn-danger">Refuser</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>C004</td>
+                          <td>Paul</td>
+                          <td>David</td>
+                          <td>1/5</td>
+                          <td>Chauffeur désagréable et comportement dangereux sur la route.</td>
+                          <td>
+                              <button class="btn btn-success">Valider</button>
+                              <button class="btn btn-danger">Refuser</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>C005</td>
+                          <td>Camille</td>
+                          <td>Sophie</td>
+                          <td>3/5</td>
+                          <td>Trajet correct mais le chauffeur parlait trop et roulait trop vite.</td>
+                          <td>
+                              <button class="btn btn-success">Valider</button>
+                              <button class="btn btn-danger">Refuser</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      <!-- Onglet Covoiturages problématiques -->
+      <div class="tab-pane fade p-4" id="problemes">
+          <div class="card p-4">
+              <h2 class="h4 fw-semibold mb-3">Covoiturages problématiques</h2>
+              <table class="table table-bordered">
+                  <thead class="table-light">
+                      <tr>
+                          <th>ID</th>
+                          <th>Date</th>
+                          <th>Trajet</th>
+                          <th>Chauffeur</th>
+                          <th>Passager</th>
+                          <th>Description</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>CP001</td>
+                          <td>2023-05-15</td>
+                          <td>Paris - Lyon</td>
+                          <td>Bob</td>
+                          <td>Alice</td>
+                          <td>Le chauffeur est arrivé avec 30 minutes de retard et conduisait de manière imprudente.</td>
+                      </tr>
+                      <tr>
+                          <td>CP002</td>
+                          <td>2023-05-16</td>
+                          <td>Marseille - Nice</td>
+                          <td>Thomas</td>
+                          <td>Jean</td>
+                          <td>Litige sur le paiement, le passager n'a pas respecté l'accord initial.</td>
+                      </tr>
+                      <tr>
+                          <td>CP003</td>
+                          <td>2023-05-18</td>
+                          <td>Bordeaux - Toulouse</td>
+                          <td>Emma</td>
+                          <td>Paul</td>
+                          <td>Dispute entre le passager et le chauffeur à cause du volume de la musique.</td>
+                      </tr>
+                      <tr>
+                          <td>CP004</td>
+                          <td>2023-05-20</td>
+                          <td>Lille - Rouen</td>
+                          <td>David</td>
+                          <td>Laura</td>
+                          <td>Le chauffeur a changé l’itinéraire sans prévenir et allongé la durée du trajet.</td>
+                      </tr>
+                      <tr>
+                          <td>CP005</td>
+                          <td>2023-05-22</td>
+                          <td>Montpellier - Nîmes</td>
+                          <td>Sophie</td>
+                          <td>Camille</td>
+                          <td>Le passager a annulé au dernier moment sans prévenir.</td>
+                      </tr>
+                      <tr>
+                          <td>CP006</td>
+                          <td>2023-05-24</td>
+                          <td>Strasbourg - Metz</td>
+                          <td>Lucas</td>
+                          <td>Clara</td>
+                          <td>Suspicion de conduite sous influence signalée par le passager.</td>
+                      </tr>
+                      <tr>
+                          <td>CP007</td>
+                          <td>2023-05-25</td>
+                          <td>Rennes - Nantes</td>
+                          <td>Marc</td>
+                          <td>Julie</td>
+                          <td>Refus de porter la ceinture de sécurité par un passager.</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+  

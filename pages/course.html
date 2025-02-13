@@ -1,0 +1,127 @@
+<div class="container py-5">
+  <div class="card p-4 w-100 w-md-75 w-lg-40 mx-auto">
+    <h2 class="h4 fw-semibold mb-4 text-center">Saisir un nouveau voyage</h2>
+    
+    <form id="voyageForm" class="needs-validation" novalidate>
+      <!-- Départ et Arrivée -->
+      <div class="row g-3">
+        <!-- Départ -->
+        <div class="col-12 col-md-6">
+          <h3 class="h5 fw-semibold border-bottom pb-2">Départ</h3>
+          <div class="mb-2">
+            <label for="departure" class="form-label">Ville de départ</label>
+            <input type="text" class="form-control form-control-sm" id="departure" required>
+          </div>
+          <div class="row g-2">
+            <div class="col-12 col-md-6">
+              <label for="departure-date" class="form-label">Date de départ</label>
+              <input type="date" class="form-control form-control-sm" id="departure-date" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="departure-time" class="form-label">Heure de départ</label>
+              <input type="time" class="form-control form-control-sm" id="departure-time" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrivée -->
+        <div class="col-12 col-md-6">
+          <h3 class="h5 fw-semibold border-bottom pb-2">Arrivée</h3>
+          <div class="mb-2">
+            <label for="arrival" class="form-label">Ville d'arrivée</label>
+            <input type="text" class="form-control form-control-sm" id="arrival" required>
+          </div>
+          <div class="row g-2">
+            <div class="col-12 col-md-6">
+              <label for="arrival-date" class="form-label">Date d'arrivée</label>
+              <input type="date" class="form-control form-control-sm" id="arrival-date" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="arrival-time" class="form-label">Heure d'arrivée</label>
+              <input type="time" class="form-control form-control-sm" id="arrival-time" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prix -->
+      <div class="mb-3 mt-3">
+        <label for="price" class="form-label">Prix (en crédits)</label>
+        <input type="number" class="form-control form-control-sm" id="price" min="2" required>
+        <div class="form-text">
+          Note : 2 crédits seront prélevés par la plateforme pour garantir le bon fonctionnement.
+        </div>
+      </div>
+
+      <!-- Sélection du véhicule -->
+      <div class="mb-3">
+        <label for="vehicle" class="form-label">Véhicule</label>
+        <select class="form-select form-control-sm" id="vehicle" required>
+          <option selected disabled>Sélectionnez un véhicule</option>
+          <option value="1">Renault Clio - AB-123-CD</option>
+          <option value="2">Peugeot 308 - EF-456-GH</option>
+        </select>
+      </div>
+
+      <!-- Bouton Soumettre -->
+      <button type="button" class="btn btn-primary d-block mx-auto mt-3" data-bs-toggle="modal" data-bs-target="#confirmationModal">
+        Soumettre le voyage
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ✅ Modale de Confirmation -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmer la soumission</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Êtes-vous sûr de vouloir créer ce voyage ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" id="confirmSubmission">Confirmer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Modale de Succès -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Voyage Créé</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Votre voyage a été créé avec succès !
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Script JavaScript pour gérer les modales -->
+<script>
+  document.getElementById("confirmSubmission").addEventListener("click", function () {
+    // Ferme la modale de confirmation
+    var confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
+    confirmationModal.hide();
+
+    // Ouvre la modale de succès après un petit délai
+    setTimeout(() => {
+      var successModal = new bootstrap.Modal(document.getElementById("successModal"));
+      successModal.show();
+    }, 500);
+  });
+</script>
+
+
+  

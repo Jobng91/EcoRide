@@ -11965,4 +11965,44 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 250px;
+}
+
+footer.footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card-covoiturage {
+  width: 75%;
+}
+
+.card-espace {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-covoiturage {
+    width: 55%;
+  }
+  .card-espace {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .card-covoiturage {
+    width: 35%;
+  }
+  .card-espace {
+    width: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

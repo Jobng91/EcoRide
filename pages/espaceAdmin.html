@@ -1,0 +1,132 @@
+<div class="container py-5">
+  <h1 class="h2 fw-bold mb-4">Espace Administrateur</h1>
+
+  <!-- Onglets de navigation -->
+  <ul class="nav nav-tabs" id="adminTabs" role="tablist">
+      <li class="nav-item">
+          <button class="nav-link active" id="employees-tab" data-bs-toggle="tab" data-bs-target="#employees" type="button">Gestion des employés</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link" id="users-tab" data-bs-toggle="tab" data-bs-target="#users" type="button">Gestion des comptes</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link" id="stats-tab" data-bs-toggle="tab" data-bs-target="#stats" type="button">Statistiques</button>
+      </li>
+  </ul>
+
+  <!-- Contenu des onglets -->
+  <div class="tab-content" id="adminTabsContent">
+      
+      <!-- Onglet Gestion des employés -->
+      <div class="tab-pane fade show active p-4" id="employees">
+          <div class="card p-4 card-covoiturage mx-auto d-block">
+              <h2 class="h4 fw-semibold mb-3">Créer un compte employé</h2>
+              <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="EmailInput" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+                </div>
+                <div class="mb-3">
+                    <label for="PseudoInput" class="form-label">Pseudo</label>
+                    <input type="text" class="form-control" id="PseudoInput" placeholder="Pseudo" name="Pseudo"> 
+                </div>
+                <div class="mb-3">
+                  <label for="PasswordInput" class="form-label">Mot de passe</label>
+                  <input type="password" class="form-control" id="PasswordInput" name="Password">
+                </div>
+                <div class="mb-3">
+                    <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+                    <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Créer le compte</button>
+              </form>
+          </div>
+      </div>
+
+      <!-- Onglet Gestion des comptes -->
+      <div class="tab-pane fade p-4" id="users">
+          <div class="card p-4">
+              <h2 class="h4 fw-semibold mb-3">Gestion des comptes</h2>
+              <table class="table table-bordered">
+                  <thead class="table-light">
+                      <tr>
+                          <th>ID</th>
+                          <th>Nom</th>
+                          <th>Email</th>
+                          <th>Type</th>
+                          <th>Statut</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>U1</td>
+                          <td>Charlie Brown</td>
+                          <td>charlie@example.com</td>
+                          <td>Utilisateur</td>
+                          <td>Actif</td>
+                          <td><button class="btn btn-danger">Suspendre</button></td>
+                      </tr>
+                      <tr>
+                          <td>U2</td>
+                          <td>Julie Durand</td>
+                          <td>julie@example.com</td>
+                          <td>Chauffeur</td>
+                          <td>En attente</td>
+                          <td>
+                              <button class="btn btn-success">Approuver</button>
+                              <button class="btn btn-danger">Rejeter</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>U3</td>
+                          <td>Marc Dupont</td>
+                          <td>marc@example.com</td>
+                          <td>Administrateur</td>
+                          <td>Actif</td>
+                          <td><button class="btn btn-secondary" disabled>Action non disponible</button></td>
+                      </tr>
+                      <tr>
+                          <td>U4</td>
+                          <td>Sophie Bernard</td>
+                          <td>sophie@example.com</td>
+                          <td>Utilisateur</td>
+                          <td>Bloqué</td>
+                          <td><button class="btn btn-warning">Réactiver</button></td>
+                      </tr>
+                      <tr>
+                          <td>U5</td>
+                          <td>Lucas Martin</td>
+                          <td>lucas@example.com</td>
+                          <td>Chauffeur</td>
+                          <td>Actif</td>
+                          <td><button class="btn btn-danger">Suspendre</button></td>
+                      </tr>
+                      <tr>
+                          <td>U6</td>
+                          <td>Emma Leroy</td>
+                          <td>emma@example.com</td>
+                          <td>Utilisateur</td>
+                          <td>En attente</td>
+                          <td>
+                              <button class="btn btn-success">Approuver</button>
+                              <button class="btn btn-danger">Rejeter</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      <!-- Onglet Statistiques -->
+      <div class="tab-pane fade p-4" id="stats">
+          <div class="card p-4">
+              <h2 class="h4 fw-semibold mb-3">Statistiques</h2>
+              <p>Graphiques des covoiturages et crédits gagnés à insérer ici.</p>
+          </div>
+      </div>
+
+  </div>
+</div>
+  
+  
