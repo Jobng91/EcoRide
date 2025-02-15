@@ -109,19 +109,5 @@
 </div>
 
 <!-- ✅ Script JavaScript pour gérer les modales -->
-<script>
-  document.getElementById("confirmSubmission").addEventListener("click", function () {
-    // Ferme la modale de confirmation
-    var confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
-    confirmationModal.hide();
-
-    // Ouvre la modale de succès après un petit délai
-    setTimeout(() => {
-      var successModal = new bootstrap.Modal(document.getElementById("successModal"));
-      successModal.show();
-    }, 500);
-  });
-</script>
-
 
   
