@@ -9,18 +9,18 @@
           <form action="/covoiturage" method="get">
             <div class="row g-2 mb-3">
               <div class="col">
-                <input type="text" name="depart" class="form-control" placeholder="Ville de départ" required>
+                <input id="depart" type="text" name="depart" class="form-control" placeholder="Ville de départ" required>
               </div>
               <div class="col">
-                <input type="text" name="arrivee" class="form-control" placeholder="Ville d'arrivée" required>
+                <input id="arrivee" type="text" name="arrivee" class="form-control" placeholder="Ville d'arrivée" required>
               </div>
             </div>
             <div class="row g-2">
               <div class="col">
-                <input type="date" name="date" class="form-control" required>
+                <input id="date" type="date" name="date" class="form-control" required>
               </div>
               <div class="col">
-                <button type="submit" class="btn btn-primary w-100">
+                <button type="submit" class="btn btn-primary w-100" href="/covoiturage">
                   <i class="bi bi-search me-2"></i> Rechercher
                 </button>
               </div>
@@ -188,7 +188,7 @@
       <p class="fs-5 mb-4">
         Inscrivez-vous maintenant et commencez à économiser tout en protégeant l'environnement !
       </p>
-      <a href="#" class="btn btn-primary btn-lg">
+      <a href="/covoiturage" class="btn btn-primary btn-lg">
         <i class="bi bi-car-front me-2"></i> Commencer maintenant
       </a>
     </div>

@@ -25,39 +25,54 @@
                 <i class="bi bi-house-door"></i> Home
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="passager">
               <a class="nav-link" href="/covoiturage">
                 <i class="bi bi-people"></i> Covoiturage
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="chauffeur">
               <a class="nav-link" href="/course">
                 <i class="bi bi-plus-circle"></i> Crée une course
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="chauffeur">
               <a class="nav-link" href="/espaceChauffeur">
-                <i class="bi bi-car-front"></i> Mes covoiturages 1
+                <i class="bi bi-car-front"></i> Mes covoiturages 
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="passager">
               <a class="nav-link" href="/espacePassager">
-                <i class="bi bi-car-front"></i> Mes covoiturages 2
+                <i class="bi bi-car-front"></i> Mes covoiturages 
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="employe">
               <a class="nav-link" href="/espaceEmploye">
                 <i class="bi bi-briefcase"></i> Espace Employé
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="admin">
               <a class="nav-link" href="/espaceAdmin">
                 <i class="bi bi-shield-lock"></i> Espace Administrateur
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-show="connected">
               <a class="nav-link" href="/profil">
                 <i class="bi bi-person-circle"></i> Profil
+              </a>
+            </li>
+            <li class="nav-item" data-show="disconnected">
+              <a class="nav-link" href="/connexion">
+                <i class="bi bi-person-circle"></i> Connexion
+              </a>
+            </li>
+            <li class="nav-item" data-show="connected">
+              <a class="nav-link" id="signout-btn" href="/">
+                <i class="bi bi-person-circle"></i> Déconnexion
+              </a>
+            </li>
+            <li class="nav-item" data-show="disconnected">
+              <a class="nav-link" href="/inscription">
+                <i class="bi bi-person-circle"></i> Inscription
               </a>
             </li>
           </ul>
@@ -95,6 +110,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     <script type="module" src="Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
