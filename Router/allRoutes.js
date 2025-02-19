@@ -4,9 +4,9 @@ import Route from "./Route.js";
 export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html", []),
     new Route("/covoiturage", "Covoiturage", "/pages/covoiturage/covoiturage.html",[], "js/covoiturage/covoiturage.js"),
-    new Route("/detail", "Detail", "/pages/covoiturage/detail.html", ["passager"]),
+    new Route("/detail", "Detail", "/pages/covoiturage/detail.html", []),
     new Route("/profil", "Profil", "/pages/profil.html", []),
-    new Route("/course", "Course", "/pages/covoiturage/course.html", ["chauffeur    "]),
+    new Route("/course", "Course", "/pages/covoiturage/course.html", ["chauffeur"]),
     new Route("/espaceAdmin", "Espace Admin", "/pages/espace/espaceAdmin.html",[ "admin"]),
     new Route("/espaceChauffeur", "Espace Chauffeur", "/pages/espace/espaceChauffeur.html",["chauffeur"], "js/espace/espaceChauffeur.js"),
     new Route("/espaceEmploye", "Espace Employe", "/pages/espace/espaceEmploye.html",["employe"]),
